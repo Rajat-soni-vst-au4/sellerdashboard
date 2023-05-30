@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Button from '../../Button/Button';
 function Food({data}) {
   // console.log("food", foodFilteredData)
   return (
@@ -8,7 +8,7 @@ function Food({data}) {
     
     {data.filter(item => item.productCategory === "Food" ).map(i => (
       <ul key={i.productID}>
-  <li>{i.productID} {i.productName} {i.productPrice}</li>
+  <li>{i.productID} {i.productName} {i.productPrice} <Button /></li>
       </ul>
     ))
     

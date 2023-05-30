@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../Button/Button'
 
 function Electronics({data}) {
   // console.log("elec", electronicsFilteredData)
@@ -9,10 +10,10 @@ function Electronics({data}) {
     
     {data.filter(item => item.productCategory === "Electronics" ).map(i => (
       <ul key={i.productID}>
- <li>{i.productID} {i.productName} {i.productPrice}</li>
+        <li>{i.productID} {i.productName} {i.productPrice} <Button /></li>
+        
       </ul>
     ))
-    
     
     }
     </>
