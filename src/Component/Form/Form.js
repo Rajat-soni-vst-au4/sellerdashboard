@@ -1,4 +1,5 @@
 import React from 'react';
+import CategoryBoard from '../CategoryBoard/CategoryBoard';
 import NewProductForm from "../Form/NewProductFrom"
 
 
@@ -10,6 +11,7 @@ const getData = (enterProductID,enterProductName,enterProductPrice,enterProductC
   return (
     <div>
          <NewProductForm getData= {getData}/>
+         <CategoryBoard />
     </div>
   )
 }

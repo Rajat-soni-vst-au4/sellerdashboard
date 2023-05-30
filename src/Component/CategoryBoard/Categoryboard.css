@@ -1,0 +1,9 @@
+.Categoryboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+.e1{
+    margin: 40px  140px;
+}
