@@ -6,7 +6,7 @@ import NewProductForm from "../Form/NewProductFrom"
 function Form() {
     const [dataList, setDataList] = useState([]);
 
-    console.log("data", dataList)
+    // console.log("data", dataList)
 
     useEffect(() => {
       localStorage.setItem("Data",JSON.stringify(dataList))
