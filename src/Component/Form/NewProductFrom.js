@@ -9,6 +9,10 @@ function NewProductForm( {getData}) {
     const CollectInputData =(e) =>{
         e.preventDefault()
         getData(enterProductID,enterProductName,enterProductPrice,enterProductCategory)
+        setEnterProductID("")
+        setEnterProductName("")
+        setEnterProductPrice("")
+        setEnterProductCategory("")
     }
   return (
     <div>
@@ -21,7 +25,7 @@ function NewProductForm( {getData}) {
             <input type="number" value={enterProductPrice} onChange={(e) => setEnterProductPrice(e.target.value)}/>
             <label>Product category</label>
             <select value={enterProductCategory} onChange={(e) => setEnterProductCategory(e.target.value)}>
-            <option value="Other">Other</option>
+            <option value="Other">Please select</option>
               <option value="Electronics">Electronics</option>
               <option value="Food">Food</option>
               <option  value="SkinCare">SkinCare</option>
